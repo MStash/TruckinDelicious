@@ -200,7 +200,7 @@ router.post(
       .then(eatery => {
         const newReview = {
           user: req.user.id,
-          avatar: req.body.avatar,
+          avatar: req.user.avatar,
           rating: req.body.rating,
           comment: req.body.comment
         };
